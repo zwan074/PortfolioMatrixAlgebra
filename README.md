@@ -1,1 +1,3 @@
 # PortfolioMatrixAlgebra
+
+A simple calculation 
