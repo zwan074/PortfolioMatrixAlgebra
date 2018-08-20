@@ -7,17 +7,20 @@ def compute_ln_return ( data ):
 
     return np.log ( data [0:len(data)-1 ] / ln_return)
 
-def investment_report ( x ,initial_investment , data ) :    
+def investment_report ( x ,initial_investment, data ) :
     
     balance = np.zeros( len(data[0]))
-    balance[0] = initial_investment
+    #balance[0] = initial_investment
+    m = np.zeros (len(x))
+    
+    for i in range (len(data)):
+        m[i] = initial_investment * x[i] / data[i][0]
     
     for i in range (len(balance)):
         for j in range (len(x)):
-            balance[i] = balance[i] +  data[j][i] / ( balance[i-1] * x[j] )
-        balance[i] = balance[i] - initial_investment  
-        
-    print ('Risk for this portfolio is: ', np.std(balance)) 
+            balance[i] = balance[i] +  data[j][i] * m[j]
+            
+    balance[i] = balance[i] - initial_investment 
     
     pl.plot(balance )
     pl.show()
