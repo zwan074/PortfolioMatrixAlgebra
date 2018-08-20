@@ -41,3 +41,5 @@ y = port.globalMin_portfolio()
 
 DataProcessing.investment_report (x ,inputData)   
 DataProcessing.investment_report (y ,inputData)  
+
+![image](https://user-images.githubusercontent.com/42155686/44328619-1c43ab00-a4b6-11e8-8042-ccec13a2c596.png)
