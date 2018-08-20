@@ -32,8 +32,8 @@ port = PortfolioMatrixAlgebra.PortfolioMatrixAlgebra (Ln_return_input, 0.001)
 
 # Print report of efficient frontier graph, efficient portfolios,global minimum portfolios, tangency portfolios.
 port.report()
-https://user-images.githubusercontent.com/42155686/44324785-ca495800-a4aa-11e8-9ea3-ec5c78603cbf.png
-https://user-images.githubusercontent.com/42155686/44324817-e8af5380-a4aa-11e8-95b0-2fa497108b56.png
+![alt text] (https://user-images.githubusercontent.com/42155686/44324785-ca495800-a4aa-11e8-9ea3-ec5c78603cbf.png)
+![alt text] (https://user-images.githubusercontent.com/42155686/44324817-e8af5380-a4aa-11e8-95b0-2fa497108b56.png)
 # Print profit and loss graph with proposed asset portfolio e.g.:
 
 x = port.tangency_portfolio()[2]
