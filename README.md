@@ -30,10 +30,10 @@ Ln_return_input = [Ln_return_BTC,Ln_return_ETC,Ln_return_LTC,Ln_return_BTC2  ]
 # Initialise  PortfolioMatrixAlgebra class, with input of Ln_return_input and value of risk free asset (0.001)
 port = PortfolioMatrixAlgebra.PortfolioMatrixAlgebra (Ln_return_input, 0.001) 
 
-# Pring report of efficient frontier graph, efficient portfolios,global minimum portfolios, tangency portfolios.
+# Print report of efficient frontier graph, efficient portfolios,global minimum portfolios, tangency portfolios.
 port.report()
 
-# Print profit and loss graph with proposed asset portfolio
+# Print profit and loss graph with proposed asset portfolio e.g.:
 
 x = port.tangency_portfolio()[2]
 y = port.globalMin_portfolio() 
