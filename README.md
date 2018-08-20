@@ -37,9 +37,7 @@ port.report()
 # Print profit and loss graph with proposed asset portfolio e.g.:
 
 x = port.tangency_portfolio()[2]
-y = port.globalMin_portfolio() 
 
-DataProcessing.investment_report (x ,inputData)   
-DataProcessing.investment_report (y ,inputData)  
+DataProcessing.investment_report (x ,1000,inputData)   
 
 ![image](https://user-images.githubusercontent.com/42155686/44328619-1c43ab00-a4b6-11e8-8042-ccec13a2c596.png)
